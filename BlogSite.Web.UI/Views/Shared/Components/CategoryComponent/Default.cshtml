@@ -1,0 +1,13 @@
+﻿@model  IEnumerable<Category>
+    @{ 
+        Layout = null;
+    }
+<h4 class="heading-primary">Categories</h4>
+<ul class="nav nav-list mb-xlg">
+    @foreach (var item in Model)
+    {
+        <li><a href="#">@item.Name (@item.Blogs.Count()) </a></li>
+    }
+
+
+</ul>
